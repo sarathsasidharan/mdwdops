@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "mdwdoadfdev2020"
 		},
+		"Ls_AzureDatabricks_01_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'Ls_AzureDatabricks_01'"
+		},
 		"P_Ingest_MelbParkingData_properties_0_typeProperties_notebookPath": {
 			"type": "string",
 			"defaultValue": "/notebooks/02_standardize"
@@ -431,14 +435,10 @@
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://australiaeast.azuredatabricks.net",
+					"domain": "https://adb-6269427361236700.0.azuredatabricks.net",
 					"accessToken": {
-						"type": "AzureKeyVaultSecret",
-						"store": {
-							"referenceName": "Ls_KeyVault_01",
-							"type": "LinkedServiceReference"
-						},
-						"secretName": "databricksToken"
+						"type": "SecureString",
+						"value": "[parameters('Ls_AzureDatabricks_01_accessToken')]"
 					},
 					"newClusterNodeType": "Standard_DS3_v2",
 					"newClusterNumOfWorker": "1",
@@ -448,9 +448,7 @@
 					"newClusterVersion": "5.5.x-scala2.11"
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/Ls_KeyVault_01')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/Ls_AzureSQLDW_01')]",
