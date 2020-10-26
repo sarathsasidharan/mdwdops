@@ -7,10 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "mdwdoadfdev2020"
 		},
-		"Ls_AzureDatabricks_01_accessToken": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'Ls_AzureDatabricks_01'"
-		},
 		"P_Ingest_MelbParkingData_properties_0_typeProperties_notebookPath": {
 			"type": "string",
 			"defaultValue": "/notebooks/02_standardize"
@@ -77,9 +73,6 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
-					},
-					"Ls_AzureDatabricks_01_accessToken": {
-						"value": "[parameters('Ls_AzureDatabricks_01_accessToken')]"
 					},
 					"Ls_KeyVault_01_properties_typeProperties_baseUrl": {
 						"value": "[parameters('Ls_KeyVault_01_properties_typeProperties_baseUrl')]"
