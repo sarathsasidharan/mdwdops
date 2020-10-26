@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/devlacepub/DataDevOps/_apis/build/status/ddo_transform-ci-artifacts?branchName=master)](https://dev.azure.com/devlacepub/DataDevOps/_build/latest?definitionId=3&branchName=master)
+
 
 # DataOps - Parking Sensor Demo <!-- omit in toc -->
 
@@ -88,10 +88,6 @@ It makes use of the following azure services:
 - [Azure DevOps](https://azure.microsoft.com/en-au/services/devops/)
 - [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 - [PowerBI](https://powerbi.microsoft.com/en-us/)
-
-For a detailed walk-through of the solution and key concepts, watch the following video recording:
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Xs1-OU5cmsw/0.jpg)](https://www.youtube.com/watch?v=Xs1-OU5cmsw")
 
 ## Key Learnings
 The following summarizes key learnings and best practices demonstrated by this sample solution:

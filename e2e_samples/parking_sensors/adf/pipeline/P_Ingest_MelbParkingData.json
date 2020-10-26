@@ -264,7 +264,8 @@
 				"defaultValue": "lnd"
 			}
 		},
-		"annotations": []
+		"annotations": [],
+		"lastPublishTime": "2020-10-22T11:17:36Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
